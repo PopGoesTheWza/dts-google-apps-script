@@ -8,8 +8,8 @@ Scrape and generate Apps Script `d.ts` files.
 
 ```sh
 # Clone this repo
-node src/spider.js > out.json # Scrape the Apps Script Reference Docs and create JSON files
-node src/gen.js < out.json # Pipe the output from above into a generator. New d.ts files are written to google-apps-script/
+node build/spider.js > out.json # Scrape the Apps Script Reference Docs and create JSON files
+node build/gen.js < out.json # Pipe the output from above into a generator. New d.ts files are written to google-apps-script/
 ```
 
 Create a PR to [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) with these updated files.
